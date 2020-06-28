@@ -1,0 +1,109 @@
+body {
+    background-image: url("/images/background.png");
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+}
+
+image {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: auto;
+    object-fit: contain;
+}
+
+#title {
+    margin-top: 40px !important;
+    margin: auto;
+}
+
+h1 {
+    color: #417b76;
+    font-size: 70px;
+}
+
+#commentator {
+    margin: auto;
+    color: #065656;
+}
+
+.scores, .score-titles, .options{
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+#player-score-box, #cpu-score-box {
+    width: 125px;
+    height: 125px;
+    margin: 0 30px 30px 30px;
+    background-color: #c9e1b8;
+    border: 3px solid #1c767d;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#player, #cpu {
+    font-size: 25px;
+    color: #065656;
+    margin: 30px 70px 5px 60px;
+}
+
+#player-score, #cpu-score {
+    font-size: 100px;
+    color: #065656;
+}
+
+.options-button{
+    width: 115px;
+    height: 115px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    background-color: #c9e1b8;
+    border: 3px solid #1c767d;
+    margin: 20px 40px;
+    border-radius: 20%;
+
+    visibility: visible;
+}
+
+.options-button:hover, #reset:hover {
+    transform: scale(1.1) perspective(1px)
+}
+
+.options-button:focus, #reset:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
+#rock {
+    background-image: url("/images/rock.png");
+}
+
+#paper {
+    background-image: url("/images/paper.png");
+}
+
+#scissors {
+    background-image: url("/images/scissors.png");
+}
+
+#reset {
+    margin: auto;
+    color: #1c767d;
+    background-color: #c9e1b8;
+    border: 3px solid #1c767d;
+    font-size: 25px;
+    font-weight: bold;
+    width: 150px;
+    height: 60px;
+    margin-top: 30px;
+    border-radius: 2em;
+}
